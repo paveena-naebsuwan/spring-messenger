@@ -12,12 +12,18 @@
 
 <form th:action="@{/email}" th:object="${email}" method="post">
 
-    <input th:field="*{recipient}" type="text" placeholder="mottagare" />
-    <input th:field="*{subject}" type="text" placeholder="ämne" />
-    <input th:field="*{message}" type="text" placeholder="meddelande" />
+    <label>
+        <input th:field="*{recipient}" type="text" placeholder="mottagare" />
+    </label>
+    <label>
+        <input th:field="*{subject}" type="text" placeholder="ämne" />
+    </label>
+    <label>
+        <input th:field="*{message}" type="text" placeholder="meddelande" />
+    </label>
 
     <button type="submit">Skicka</button>
 
 </form>
 </body>
-</html>
+</html>s
